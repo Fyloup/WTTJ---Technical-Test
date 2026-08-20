@@ -1,0 +1,63 @@
+
+:root {
+    --search-icon-dimensions: 24px;
+}
+
+.root {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(175, 175, 175);
+    max-width: 300px;
+    padding: 6px;
+    border-radius: 6px;
+    gap: 6px;
+    cursor: text;
+    transition: box-shadow 300ms ease-in-out, border-color 300ms ease-in-out;
+
+    &:hover {
+        box-shadow: inset 0px 0px 5px 1px #c0c0c0;
+    }
+
+    &:focus-within {
+        border-color: var(--button-color-border-focused);
+    }
+}
+
+.searchIcon {
+    height: var(--search-icon-dimensions);
+    width: var(--search-icon-dimensions);
+    min-width: var(--search-icon-dimensions);
+    max-width: var(--search-icon-dimensions);
+    min-height: var(--search-icon-dimensions);
+    min-width: var(--search-icon-dimensions);
+}
+
+.input {
+    width: 100%;
+    outline: none;
+}
+
+.filtersWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 24px;
+}
+
+.filterContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 8px;
+}
